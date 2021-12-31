@@ -129,8 +129,7 @@ client.on('interactionCreate', async interaction => {
     };
 });
 
-client.login('OTI1ODQxMzIzMDI4Nzc0OTMy.Ycy-7A.drh_mj6iLadmUbZHsqh8_m-SuhM')
-// client.login('ODc5NDYyMDkzNDE2NDYwMzg5.YSQE5g.d3pCOUu71uhHvmbQaUMrswaSQZ0');
+client.login(process.env.TOKEN);
 
 
 /* Types */
