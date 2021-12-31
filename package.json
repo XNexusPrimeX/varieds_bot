@@ -1,0 +1,25 @@
+{
+  "name": "varieds_bot",
+  "version": "2.2.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "tsc && node dist/",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "db-local": "^1.1.6",
+    "discord.js": "^13.5.0",
+    "dotenv": "^10.0.0",
+    "lowdb": "github:dankreiger/lowdb#chore/esm-cjs-hybrid-WITH-LIB",
+    "node-windows": "^1.0.0-beta.5",
+    "simpl.db": "^2.2.0",
+    "uniqid": "^5.4.0"
+  },
+  "devDependencies": {
+    "@types/uniqid": "^5.3.1"
+  }
+}
