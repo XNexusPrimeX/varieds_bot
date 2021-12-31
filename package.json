@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "tsc && node dist/",
+    "repl-start": "npx typescript@latest && npx node@latest dist/",
     "start": "node ."
   },
   "keywords": [],
