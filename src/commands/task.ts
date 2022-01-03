@@ -29,6 +29,7 @@ module.exports = <ICommand>{
     name: 'task',
     description: 'a',
     guildOnly: true,
+		devOnly: true, 
     options: [
         {
             name: 'start',
@@ -214,7 +215,7 @@ module.exports = <ICommand>{
 
                 return { 
                     name: `${acceptedStatus[task.progress]} | Para ${date}/${month}`,
-                    value: `${task.description}\n\n${task.id}`
+                    value: `*${task.description}*\n\n${task.id}`
                 }
             });
         }

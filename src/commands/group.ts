@@ -8,6 +8,7 @@ module.exports = <ICommand>{
     name: 'group',
     description: 'Modifica um canal temporário',
     guildOnly: true,
+	  devOnly: true, 
     options: [
         {
             name: 'create',

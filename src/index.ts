@@ -32,7 +32,7 @@ export const globalEmbed = <K extends boolean = false>(type: typeOfGlobalEmbed, 
     // TS bug
     // @ts-ignore
     if(isEmbed) return embed
-    //@ts-ignore
+    // @ts-ignore
     else return { embeds: [embed], ephemeral: ephemeralMessages };
 }
 
@@ -100,8 +100,8 @@ client.once('ready', async () => {
         const file: ReturnType<typeof createEvent> = require(`./events/${filePath}`);
 
         try {
-            if(file.once) client.once(file.type, (...args) => file.execute(...args));
-            else client.on(file.type, (...args) => file.execute(...args));
+            if(file.once) client.once(file.type, (...args) => file.execute(.ata.ase, .args));
+            else client.on(file.type, (...args) => file.execute(..database, .args));
         } catch (err) {
             console.error(err)
         }
@@ -140,7 +140,7 @@ type IEvent<K extends keyof Discord.ClientEvents> = {
     description: string
     once?: boolean
     type: K
-    execute: (...args: Discord.ClientEvents[K]) => void;
+    execute: (db: typeof database, ...args: Discord.ClientEvents[K]) => void;
 }
 
 export function createEvent<K extends keyof Discord.ClientEvents>(e: IEvent<K>): IEvent<K> {
